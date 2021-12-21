@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="DocklerHW.AweVideoPreviewItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             x:Name="AweVideoItem">
+
+    <Grid Height="85" Background="#FF1F1E1E">
+        <Image Margin="10,8,0,7" Height="70" HorizontalAlignment="Left" Width="140" Source="{Binding PreviewImageUri, ElementName=AweVideoItem}"/>
+        <StackPanel  Margin="170,12,0,13">
+            <TextBlock HorizontalAlignment="Left" Text="{Binding VideoTitle, ElementName=AweVideoItem}" TextWrapping="Wrap" Height="25" Width="310" Background="#FFBB5757"/>
+            <TextBlock HorizontalAlignment="Left" Text="{Binding Quality, ElementName=AweVideoItem}" TextWrapping="Wrap" Height="15" Width="310" Background="#FFFF8F8F"/>
+            <TextBlock HorizontalAlignment="Left" Text="{Binding Duration, ElementName=AweVideoItem}" TextWrapping="Wrap" Height="15" Width="310" Background="#FFFFA3A3"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
